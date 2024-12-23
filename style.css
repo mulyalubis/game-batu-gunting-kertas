@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right top, #333 , forestgreen);
+    height: 100vh;
+    display: grid;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px;
+    color: white;
+    text-shadow: 5px 3px 5px black, 6px 4px 4px black, 7px 4px 3px black;
+    letter-spacing: 6px;
+}
+
+
+.area-computer {
+    background-color: rgb(171, 41, 41);
+    width: 600px;
+    height: 235px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-self: center;
+}
+
+.area-computer .img-computer {
+    width: 170px;
+    height: 150px;
+}
+
+.info {
+    text-align: center;
+    padding: 9px 0;
+    position: absolute;
+    left: 44.5%;
+    top: 52%;
+    background-color: grey;
+    width: 145px;
+    height: 48px;
+    border-radius: 20px;
+    font-size: 21px;
+    color: cyan;
+    border: 2px solid black;
+}
+
+
+.area-player {
+    width: 600px;
+    height: 235px; 
+    padding-top: 48px;
+    place-self: center;
+    background-color: #079;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    margin-bottom: 20px;
+}
+
+.area-player ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 1.5em;
+}
+
+
+.batu, .kertas, .gunting {
+    width: 170px;
+    height: 150px;
+    transition: .5s linear;
+}
+
+img {
+    border-radius: 100%;
+}
+
+.batu:hover, .kertas:hover, .gunting:hover {
+    box-shadow: 0px 0px 8px 8px #444;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
