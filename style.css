@@ -87,3 +87,78 @@ img {
     margin-bottom: 4px;
     cursor: pointer;
 }
+
+
+@media screen and (max-width: 1000px) {
+    body {
+        width: 30vw;
+    }
+    h1 {
+        font-size: 1.3rem;
+        margin-left: 300px;
+    }
+    div {
+        position: relative;
+        left: 9rem;
+    }
+    div.info {
+        position: absolute;
+        left: 23.2rem;
+        z-index: 2;
+    }
+    div.area-player {
+        top: -1.3rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    div {
+        position: relative;
+        left: 5rem;
+    }
+    div.info {
+        position: absolute;
+        left: 19rem;
+        z-index: 2;
+    }
+}
+@media screen and (max-width: 600px) {
+    body {
+        background-color: #079;
+    }
+    h1 {
+        position: relative;
+        font-size: 1rem;
+        left: -18rem;
+        width: 300px;
+        height: 60px;
+    }
+    .area-computer, .area-player {
+        left: -9rem;
+        width: 230px;
+        height: 150px;
+    }
+    .area-computer {
+        bottom: -1rem;
+    }
+    .area-computer .img-computer, .area-player .batu, .gunting, .kertas {
+        width: 120px;
+        height: 100px;
+    }
+    div.info {
+        position: absolute;
+        top: 19.5rem;
+        left: 7.3rem;
+        width: 100px;
+        height: 40px;
+        font-size: .85rem;
+    }
+    .area-player {
+        margin-bottom: 18vh;
+        height: 26rem;
+    }
+    .area-player ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
